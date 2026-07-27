@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* navbar */
+.navbar {
+  background-color: #222;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  color: red;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* main */
+.main-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.home-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* search */
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 8px;
+  width: 300px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-btn {
+  padding: 8px 15px;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.reset-btn {
+  padding: 8px 10px;
+  background-color: #aaa;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.search-info {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* grid */
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* card */
+.movie-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.movie-card:hover {
+  border-color: #888;
+}
+
+.movie-poster {
+  position: relative;
+}
+
+.movie-poster img {
+  width: 100%;
+  display: block;
+}
+
+.favorite-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 3px 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.movie-info {
+  padding: 8px;
+}
+
+.movie-title {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.movie-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+}
+
+/* pagination */
+.pagination {
+  display: flex;
+  gap: 5px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.page-btn {
+  padding: 6px 10px;
+  border: 1px solid #aaa;
+  background: white;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.page-btn.active {
+  background-color: #222;
+  color: white;
+  border-color: #222;
+}
+
+.page-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-dots {
+  padding: 6px 4px;
+  color: #888;
+}
+
+/* detail */
+.movie-detail {
+  padding: 10px;
+}
+
+.back-btn {
+  background: none;
+  border: 1px solid #aaa;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.detail-content {
+  display: flex;
+  gap: 20px;
+}
+
+.detail-poster {
+  width: 250px;
+  border: 1px solid #ccc;
+}
+
+.detail-info h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.detail-meta {
+  display: flex;
+  gap: 15px;
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.detail-genres {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.genre-tag {
+  background-color: #222;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.detail-overview {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+  max-width: 600px;
+}
+
+.favorite-btn-large {
+  padding: 8px 16px;
+  border: 1px solid #aaa;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.favorite-btn-large.active {
+  background-color: #ffeded;
+  border-color: #f00;
+  color: #f00;
+}
+
+/* favorites */
+.favorites h1 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* states */
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #888;
+}
+
+.error {
+  color: red;
+  padding: 20px;
+  text-align: center;
+}
+
+.no-results {
+  text-align: center;
+  padding: 40px;
+  color: #888;
+}
+.favorites-title {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #222;
+}
